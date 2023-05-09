@@ -39,9 +39,6 @@ for (let i = 0; i < cartItems.length; i++ ){
         count: item.count,
       });
     });
-      console.log("---------------------");
-      console.log(newData);
-      console.log("---------------------");
     axios.post(apiForm2, newData)
     .then((response) => {
       if (response.status === 200) {

@@ -36,7 +36,7 @@ function CreateGoods(props) {
         const file = event.target.files[0];
         formData.append('image', file)
         const {data} = await axios.post("/upload", formData)
-        setImgUrl(`https://dolphin-app-jq56m.ondigitalocean.app${data.url}`);
+        setImgUrl(`https://walrus-app-fq6cy.ondigitalocean.app/${data.url}`);
        
     } catch (error) {
       console.warn(error);
@@ -49,7 +49,7 @@ function CreateGoods(props) {
         const file = event.target.files[0];
         formData.append('image', file)
         const {data} = await axios.post("/upload", formData)
-        setImgUrl2(`https://dolphin-app-jq56m.ondigitalocean.app${data.url}`);
+        setImgUrl2(`https://walrus-app-fq6cy.ondigitalocean.app${data.url}`);
        
     } catch (error) {
       console.warn(error);
@@ -62,7 +62,7 @@ function CreateGoods(props) {
         const file = event.target.files[0];
         formData.append('image', file)
         const {data} = await axios.post("/upload", formData)
-        setImgUrl3(`https://dolphin-app-jq56m.ondigitalocean.app${data.url}`);
+        setImgUrl3(`https://walrus-app-fq6cy.ondigitalocean.app${data.url}`);
     } catch (error) {
       console.warn(error);
       alert("Помилка при завантаженні файлу")
