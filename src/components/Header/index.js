@@ -73,7 +73,7 @@ function Header() {
                   <li><a href="">СЕРЕЖКИ</a></li>
                   <li><a href="">ПІДВІСКИ</a></li> */}
                   <li><Link onClick={() => setActiveItem(0)}  className={activeItem === 0 ? styles.activen : ''} to="/goods">ТОВАРИ</Link></li>
-                  <li><Link onClick={() => setActiveItem(4)}  className={activeItem === 4 ? styles.activen : ''} to="/bonus">АКЦІЇ</Link></li>
+                  {/* <li><Link onClick={() => setActiveItem(4)}  className={activeItem === 4 ? styles.activen : ''} to="/bonus">АКЦІЇ</Link></li> */}
                   <li><Link onClick={() => setActiveItem(2)}  className={activeItem === 2 ? styles.activen : ''} to="/cart">КОШИК</Link></li>
                   <li><Link onClick={() => setActiveItem(3)}  className={activeItem === 3 ? styles.activen : ''} to="/contacts">КОНТАКТИ</Link></li>
                 </ul>
